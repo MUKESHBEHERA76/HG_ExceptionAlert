@@ -1,0 +1,41 @@
+====================================================================
+					Table needs to be created(Postgres)
+====================================================================
+CREATE TABLE "HG_EXCEPTION_ALERT" (
+    "SERVICE_NAME" VARCHAR(255) PRIMARY KEY,
+    "SUBJECT" TEXT,
+    "EMAIL_ADDRESS" TEXT,
+    "SOURCE" VARCHAR(50),
+    "TARGET" VARCHAR(50),
+    "EXCLUDE_EXCEPTION_ALERT" TEXT,
+    "VARIABLE_NAME" TEXT,
+    "VARIABLE_PATH" TEXT,
+    "STATUS" VARCHAR(10)
+);
+
+==========================================================================
+					Queues needs to be created in UM :
+===========================================================================
+HG_Exception_Alert_Queue
+
+
+
+
+===========================================================================
+			Register below server in Exception Event
+===========================================================================
+HG_ExceptionAlert.v1.publisher.services:publishNotification
+
+==============================================================================
+				Cache manager and cache need to be created
+==============================================================================
+
+Cache manager Name - ExceptionAlert_CacheManager
+Cache Name - Exception_Rule
+
+
+================================================================================
+						Update extended setting
+================================================================================
+update watt.server.event.exception.async extended settings to false
+

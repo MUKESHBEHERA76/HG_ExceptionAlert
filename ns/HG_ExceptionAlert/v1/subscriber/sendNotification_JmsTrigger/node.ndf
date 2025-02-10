@@ -20,7 +20,7 @@
     <record name="redeliveryOptions" javaclass="com.wm.util.Values">
       <value name="max">0</value>
       <value name="delayInterval">10000</value>
-      <value name="onRedeliveryFailure">0</value>
+      <value name="onRedeliveryFailure">1</value>
     </record>
     <value name="maxConcurrentThreads">1</value>
     <value name="inDoubtDetection">false</value>

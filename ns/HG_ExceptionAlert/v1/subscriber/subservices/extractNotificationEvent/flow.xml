@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <FLOW VERSION="3.0" CLEANUP="true">
+  <COMMENT>--Xml string to node--</COMMENT>
 
   <!-- nodes -->
 
@@ -498,7 +499,7 @@
         <value name="form_qualified">false</value>
         <value name="is_global">false</value>
         <value name="modifiable">true</value>
-        <value name="rec_ref">HG_ExceptionAlert.v1.common.docs:NotificationEvent</value>
+        <value name="rec_ref">HG_ExceptionAlert.v1.util.docs:NotificationEvent</value>
       </record>
       <record javaclass="com.wm.util.Values">
         <value name="node_type">unknown</value>
@@ -566,7 +567,7 @@
 
   <!-- nodes -->
 
-<MAPCOPY FROM="/document;2;0" TO="/NotificationEvent;4;0;HG_ExceptionAlert.v1.common.docs:NotificationEvent">
+<MAPCOPY FROM="/document;2;0" TO="/NotificationEvent;4;0;HG_ExceptionAlert.v1.util.docs:NotificationEvent">
 </MAPCOPY>
 
 <MAPDELETE FIELD="/document;2;0">

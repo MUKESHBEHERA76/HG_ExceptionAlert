@@ -154,7 +154,7 @@
         <value name="form_qualified">false</value>
         <value name="is_global">false</value>
         <value name="modifiable">true</value>
-        <value name="rec_ref">HG_ExceptionAlert.v1.common.docs:NotificationEvent</value>
+        <value name="rec_ref">HG_ExceptionAlert.v1.util.docs:NotificationEvent</value>
       </record>
     </array>
     <value name="modifiable">true</value>
@@ -257,7 +257,7 @@
         <value name="form_qualified">false</value>
         <value name="is_global">false</value>
         <value name="modifiable">true</value>
-        <value name="rec_ref">HG_ExceptionAlert.v1.common.docs:NotificationEvent</value>
+        <value name="rec_ref">HG_ExceptionAlert.v1.util.docs:NotificationEvent</value>
       </record>
       <record javaclass="com.wm.util.Values">
         <value name="node_type">unknown</value>
@@ -515,7 +515,7 @@
         <value name="form_qualified">false</value>
         <value name="is_global">false</value>
         <value name="modifiable">true</value>
-        <value name="rec_ref">HG_ExceptionAlert.v1.common.docs:NotificationEvent</value>
+        <value name="rec_ref">HG_ExceptionAlert.v1.util.docs:NotificationEvent</value>
       </record>
     </array>
     <value name="modifiable">true</value>
@@ -722,7 +722,7 @@
         <value name="form_qualified">false</value>
         <value name="is_global">false</value>
         <value name="modifiable">true</value>
-        <value name="rec_ref">HG_ExceptionAlert.v1.common.docs:NotificationEvent</value>
+        <value name="rec_ref">HG_ExceptionAlert.v1.util.docs:NotificationEvent</value>
       </record>
     </array>
     <value name="modifiable">true</value>
@@ -1055,7 +1055,7 @@
         <value name="form_qualified">false</value>
         <value name="is_global">false</value>
         <value name="modifiable">true</value>
-        <value name="rec_ref">HG_ExceptionAlert.v1.common.docs:NotificationEvent</value>
+        <value name="rec_ref">HG_ExceptionAlert.v1.util.docs:NotificationEvent</value>
       </record>
     </array>
     <value name="modifiable">true</value>
@@ -1123,7 +1123,7 @@
 </DATA>
 </MAPSET>
 
-<MAPCOPY FROM="/NotificationEvent;4;0;HG_ExceptionAlert.v1.common.docs:NotificationEvent" TO="/JMSMessage;2;0/body;2;0/data;2;0">
+<MAPCOPY FROM="/NotificationEvent;4;0;HG_ExceptionAlert.v1.util.docs:NotificationEvent" TO="/JMSMessage;2;0/body;2;0/data;2;0">
 </MAPCOPY>
 </MAP>
 
@@ -1236,7 +1236,7 @@
         <value name="form_qualified">false</value>
         <value name="is_global">false</value>
         <value name="modifiable">true</value>
-        <value name="rec_ref">HG_ExceptionAlert.v1.common.docs:NotificationEvent</value>
+        <value name="rec_ref">HG_ExceptionAlert.v1.util.docs:NotificationEvent</value>
       </record>
     </array>
     <value name="modifiable">true</value>
@@ -1467,7 +1467,7 @@
         <value name="form_qualified">false</value>
         <value name="is_global">false</value>
         <value name="modifiable">true</value>
-        <value name="rec_ref">HG_ExceptionAlert.v1.common.docs:NotificationEvent</value>
+        <value name="rec_ref">HG_ExceptionAlert.v1.util.docs:NotificationEvent</value>
       </record>
     </array>
     <value name="modifiable">true</value>
@@ -1638,7 +1638,7 @@
         <value name="form_qualified">false</value>
         <value name="is_global">false</value>
         <value name="modifiable">true</value>
-        <value name="rec_ref">HG_ExceptionAlert.v1.common.docs:NotificationEvent</value>
+        <value name="rec_ref">HG_ExceptionAlert.v1.util.docs:NotificationEvent</value>
       </record>
     </array>
     <value name="modifiable">true</value>
@@ -1651,7 +1651,7 @@
 <MAPDELETE FIELD="/JMSMessage;2;0">
 </MAPDELETE>
 
-<MAPDELETE FIELD="/NotificationEvent;4;0;HG_ExceptionAlert.v1.common.docs:NotificationEvent">
+<MAPDELETE FIELD="/NotificationEvent;4;0;HG_ExceptionAlert.v1.util.docs:NotificationEvent">
 </MAPDELETE>
 </MAP>
 </FLOW>

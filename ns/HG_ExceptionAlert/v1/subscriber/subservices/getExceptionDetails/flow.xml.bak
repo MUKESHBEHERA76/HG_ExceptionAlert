@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <FLOW VERSION="3.0" CLEANUP="true">
+  <COMMENT>--Retry on failure--</COMMENT>
 
   <!-- nodes -->
 
@@ -135,7 +136,7 @@
         <value name="is_global">false</value>
         <value name="rec_closed">true</value>
         <value name="modifiable">true</value>
-        <value name="rec_ref">HG_ExceptionAlert.v1.common.docs:NotificationEvent</value>
+        <value name="rec_ref">HG_ExceptionAlert.v1.util.docs:NotificationEvent</value>
       </record>
       <record javaclass="com.wm.util.Values">
         <value name="node_type">unknown</value>
@@ -159,7 +160,7 @@
 <MAPCOPY FROM="/LocalVariables;4;0;HG_ExceptionAlert.v1.subscriber.docs:LocalVariables/jdbcConnection;1;0" TO="/$connectionName;1;0">
 </MAPCOPY>
 
-<MAPCOPY FROM="/NotificationEvent;4;0;HG_ExceptionAlert.v1.common.docs:NotificationEvent/service;1;0" TO="/getExceptionDetailsInput;2;0/serviceName;1;0">
+<MAPCOPY FROM="/NotificationEvent;4;0;HG_ExceptionAlert.v1.util.docs:NotificationEvent/service;1;0" TO="/getExceptionDetailsInput;2;0/serviceName;1;0">
 </MAPCOPY>
 </MAP>
 
@@ -274,7 +275,7 @@
         <value name="is_global">false</value>
         <value name="rec_closed">true</value>
         <value name="modifiable">true</value>
-        <value name="rec_ref">HG_ExceptionAlert.v1.common.docs:NotificationEvent</value>
+        <value name="rec_ref">HG_ExceptionAlert.v1.util.docs:NotificationEvent</value>
       </record>
       <record javaclass="com.wm.util.Values">
         <value name="node_type">record</value>
@@ -304,7 +305,7 @@
 <MAPDELETE FIELD="/LocalVariables;4;0;HG_ExceptionAlert.v1.subscriber.docs:LocalVariables">
 </MAPDELETE>
 
-<MAPDELETE FIELD="/NotificationEvent;4;0;HG_ExceptionAlert.v1.common.docs:NotificationEvent">
+<MAPDELETE FIELD="/NotificationEvent;4;0;HG_ExceptionAlert.v1.util.docs:NotificationEvent">
 </MAPDELETE>
 
 <MAPDELETE FIELD="/getExceptionDetailsInput;2;0">

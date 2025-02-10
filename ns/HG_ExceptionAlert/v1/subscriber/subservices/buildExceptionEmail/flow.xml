@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <FLOW VERSION="3.0" CLEANUP="true">
+  <COMMENT>--map default body--</COMMENT>
 
   <!-- nodes -->
 
@@ -56,7 +57,7 @@
         <value name="is_global">false</value>
         <value name="rec_closed">true</value>
         <value name="modifiable">true</value>
-        <value name="rec_ref">HG_ExceptionAlert.v1.common.docs:NotificationEvent</value>
+        <value name="rec_ref">HG_ExceptionAlert.v1.util.docs:NotificationEvent</value>
       </record>
       <record javaclass="com.wm.util.Values">
         <value name="node_type">record</value>
@@ -281,7 +282,7 @@
         <value name="is_global">false</value>
         <value name="rec_closed">true</value>
         <value name="modifiable">true</value>
-        <value name="rec_ref">HG_ExceptionAlert.v1.common.docs:NotificationEvent</value>
+        <value name="rec_ref">HG_ExceptionAlert.v1.util.docs:NotificationEvent</value>
       </record>
       <record javaclass="com.wm.util.Values">
         <value name="node_type">record</value>
@@ -372,7 +373,7 @@
         <value name="is_global">false</value>
         <value name="rec_closed">true</value>
         <value name="modifiable">true</value>
-        <value name="rec_ref">HG_ExceptionAlert.v1.common.docs:NotificationEvent</value>
+        <value name="rec_ref">HG_ExceptionAlert.v1.util.docs:NotificationEvent</value>
       </record>
       <record javaclass="com.wm.util.Values">
         <value name="node_type">record</value>
@@ -402,7 +403,7 @@
 
   <!-- nodes -->
 
-<MAPCOPY FROM="/NotificationEvent;4;0;HG_ExceptionAlert.v1.common.docs:NotificationEvent/pipeline;2;0" TO="/pipeline;2;0">
+<MAPCOPY FROM="/NotificationEvent;4;0;HG_ExceptionAlert.v1.util.docs:NotificationEvent/pipeline;2;0" TO="/pipeline;2;0">
 </MAPCOPY>
 </MAP>
 
@@ -528,7 +529,7 @@
         <value name="is_global">false</value>
         <value name="rec_closed">true</value>
         <value name="modifiable">true</value>
-        <value name="rec_ref">HG_ExceptionAlert.v1.common.docs:NotificationEvent</value>
+        <value name="rec_ref">HG_ExceptionAlert.v1.util.docs:NotificationEvent</value>
       </record>
       <record javaclass="com.wm.util.Values">
         <value name="node_type">record</value>
@@ -880,7 +881,7 @@
         <value name="is_global">false</value>
         <value name="rec_closed">true</value>
         <value name="modifiable">true</value>
-        <value name="rec_ref">HG_ExceptionAlert.v1.common.docs:NotificationEvent</value>
+        <value name="rec_ref">HG_ExceptionAlert.v1.util.docs:NotificationEvent</value>
       </record>
       <record javaclass="com.wm.util.Values">
         <value name="node_type">record</value>
@@ -1104,7 +1105,7 @@
         <value name="is_global">false</value>
         <value name="rec_closed">true</value>
         <value name="modifiable">true</value>
-        <value name="rec_ref">HG_ExceptionAlert.v1.common.docs:NotificationEvent</value>
+        <value name="rec_ref">HG_ExceptionAlert.v1.util.docs:NotificationEvent</value>
       </record>
       <record javaclass="com.wm.util.Values">
         <value name="node_type">record</value>
@@ -1456,7 +1457,7 @@
         <value name="is_global">false</value>
         <value name="rec_closed">true</value>
         <value name="modifiable">true</value>
-        <value name="rec_ref">HG_ExceptionAlert.v1.common.docs:NotificationEvent</value>
+        <value name="rec_ref">HG_ExceptionAlert.v1.util.docs:NotificationEvent</value>
       </record>
       <record javaclass="com.wm.util.Values">
         <value name="node_type">record</value>
@@ -1610,7 +1611,7 @@
         <value name="is_global">false</value>
         <value name="rec_closed">true</value>
         <value name="modifiable">true</value>
-        <value name="rec_ref">HG_ExceptionAlert.v1.common.docs:NotificationEvent</value>
+        <value name="rec_ref">HG_ExceptionAlert.v1.util.docs:NotificationEvent</value>
       </record>
       <record javaclass="com.wm.util.Values">
         <value name="node_type">record</value>
@@ -1701,7 +1702,7 @@
         <value name="is_global">false</value>
         <value name="rec_closed">true</value>
         <value name="modifiable">true</value>
-        <value name="rec_ref">HG_ExceptionAlert.v1.common.docs:NotificationEvent</value>
+        <value name="rec_ref">HG_ExceptionAlert.v1.util.docs:NotificationEvent</value>
       </record>
       <record javaclass="com.wm.util.Values">
         <value name="node_type">record</value>
@@ -1855,7 +1856,7 @@
         <value name="is_global">false</value>
         <value name="rec_closed">true</value>
         <value name="modifiable">true</value>
-        <value name="rec_ref">HG_ExceptionAlert.v1.common.docs:NotificationEvent</value>
+        <value name="rec_ref">HG_ExceptionAlert.v1.util.docs:NotificationEvent</value>
       </record>
       <record javaclass="com.wm.util.Values">
         <value name="node_type">record</value>
@@ -1957,7 +1958,7 @@
         <value name="is_global">false</value>
         <value name="rec_closed">true</value>
         <value name="modifiable">true</value>
-        <value name="rec_ref">HG_ExceptionAlert.v1.common.docs:NotificationEvent</value>
+        <value name="rec_ref">HG_ExceptionAlert.v1.util.docs:NotificationEvent</value>
       </record>
       <record javaclass="com.wm.util.Values">
         <value name="node_type">record</value>
@@ -2106,7 +2107,7 @@
         <value name="is_global">false</value>
         <value name="rec_closed">true</value>
         <value name="modifiable">true</value>
-        <value name="rec_ref">HG_ExceptionAlert.v1.common.docs:NotificationEvent</value>
+        <value name="rec_ref">HG_ExceptionAlert.v1.util.docs:NotificationEvent</value>
       </record>
       <record javaclass="com.wm.util.Values">
         <value name="node_type">record</value>
@@ -2208,7 +2209,7 @@
         <value name="is_global">false</value>
         <value name="rec_closed">true</value>
         <value name="modifiable">true</value>
-        <value name="rec_ref">HG_ExceptionAlert.v1.common.docs:NotificationEvent</value>
+        <value name="rec_ref">HG_ExceptionAlert.v1.util.docs:NotificationEvent</value>
       </record>
       <record javaclass="com.wm.util.Values">
         <value name="node_type">record</value>
@@ -2357,7 +2358,7 @@
         <value name="is_global">false</value>
         <value name="rec_closed">true</value>
         <value name="modifiable">true</value>
-        <value name="rec_ref">HG_ExceptionAlert.v1.common.docs:NotificationEvent</value>
+        <value name="rec_ref">HG_ExceptionAlert.v1.util.docs:NotificationEvent</value>
       </record>
       <record javaclass="com.wm.util.Values">
         <value name="node_type">record</value>
@@ -2459,7 +2460,7 @@
         <value name="is_global">false</value>
         <value name="rec_closed">true</value>
         <value name="modifiable">true</value>
-        <value name="rec_ref">HG_ExceptionAlert.v1.common.docs:NotificationEvent</value>
+        <value name="rec_ref">HG_ExceptionAlert.v1.util.docs:NotificationEvent</value>
       </record>
       <record javaclass="com.wm.util.Values">
         <value name="node_type">record</value>
@@ -2608,7 +2609,7 @@
         <value name="is_global">false</value>
         <value name="rec_closed">true</value>
         <value name="modifiable">true</value>
-        <value name="rec_ref">HG_ExceptionAlert.v1.common.docs:NotificationEvent</value>
+        <value name="rec_ref">HG_ExceptionAlert.v1.util.docs:NotificationEvent</value>
       </record>
       <record javaclass="com.wm.util.Values">
         <value name="node_type">record</value>
@@ -2710,7 +2711,7 @@
         <value name="is_global">false</value>
         <value name="rec_closed">true</value>
         <value name="modifiable">true</value>
-        <value name="rec_ref">HG_ExceptionAlert.v1.common.docs:NotificationEvent</value>
+        <value name="rec_ref">HG_ExceptionAlert.v1.util.docs:NotificationEvent</value>
       </record>
       <record javaclass="com.wm.util.Values">
         <value name="node_type">record</value>
@@ -2871,7 +2872,7 @@
         <value name="is_global">false</value>
         <value name="rec_closed">true</value>
         <value name="modifiable">true</value>
-        <value name="rec_ref">HG_ExceptionAlert.v1.common.docs:NotificationEvent</value>
+        <value name="rec_ref">HG_ExceptionAlert.v1.util.docs:NotificationEvent</value>
       </record>
       <record javaclass="com.wm.util.Values">
         <value name="node_type">record</value>
@@ -2973,7 +2974,7 @@
         <value name="is_global">false</value>
         <value name="rec_closed">true</value>
         <value name="modifiable">true</value>
-        <value name="rec_ref">HG_ExceptionAlert.v1.common.docs:NotificationEvent</value>
+        <value name="rec_ref">HG_ExceptionAlert.v1.util.docs:NotificationEvent</value>
       </record>
       <record javaclass="com.wm.util.Values">
         <value name="node_type">record</value>
@@ -3157,7 +3158,7 @@
         <value name="is_global">false</value>
         <value name="rec_closed">true</value>
         <value name="modifiable">true</value>
-        <value name="rec_ref">HG_ExceptionAlert.v1.common.docs:NotificationEvent</value>
+        <value name="rec_ref">HG_ExceptionAlert.v1.util.docs:NotificationEvent</value>
       </record>
       <record javaclass="com.wm.util.Values">
         <value name="node_type">record</value>
@@ -3278,7 +3279,7 @@
         <value name="is_global">false</value>
         <value name="rec_closed">true</value>
         <value name="modifiable">true</value>
-        <value name="rec_ref">HG_ExceptionAlert.v1.common.docs:NotificationEvent</value>
+        <value name="rec_ref">HG_ExceptionAlert.v1.util.docs:NotificationEvent</value>
       </record>
       <record javaclass="com.wm.util.Values">
         <value name="node_type">record</value>
@@ -3471,7 +3472,7 @@
         <value name="is_global">false</value>
         <value name="rec_closed">true</value>
         <value name="modifiable">true</value>
-        <value name="rec_ref">HG_ExceptionAlert.v1.common.docs:NotificationEvent</value>
+        <value name="rec_ref">HG_ExceptionAlert.v1.util.docs:NotificationEvent</value>
       </record>
       <record javaclass="com.wm.util.Values">
         <value name="node_type">record</value>
@@ -3592,7 +3593,7 @@
         <value name="is_global">false</value>
         <value name="rec_closed">true</value>
         <value name="modifiable">true</value>
-        <value name="rec_ref">HG_ExceptionAlert.v1.common.docs:NotificationEvent</value>
+        <value name="rec_ref">HG_ExceptionAlert.v1.util.docs:NotificationEvent</value>
       </record>
       <record javaclass="com.wm.util.Values">
         <value name="node_type">record</value>
@@ -3771,7 +3772,7 @@
         <value name="is_global">false</value>
         <value name="rec_closed">true</value>
         <value name="modifiable">true</value>
-        <value name="rec_ref">HG_ExceptionAlert.v1.common.docs:NotificationEvent</value>
+        <value name="rec_ref">HG_ExceptionAlert.v1.util.docs:NotificationEvent</value>
       </record>
       <record javaclass="com.wm.util.Values">
         <value name="node_type">record</value>

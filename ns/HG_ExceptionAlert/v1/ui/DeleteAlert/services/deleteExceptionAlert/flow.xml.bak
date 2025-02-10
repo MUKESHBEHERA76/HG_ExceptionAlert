@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <FLOW VERSION="3.0" CLEANUP="true">
+  <COMMENT>--Read config--</COMMENT>
 
   <!-- nodes -->
 
@@ -58,7 +59,7 @@
 
   <!-- nodes -->
 
-<MAPINVOKE SERVICE="HG_ConfigPropertyUtil.v1.util.property:getProperty" VALIDATE-IN="$none" VALIDATE-OUT="$none" INVOKE-ORDER="0">
+<MAPINVOKE SERVICE="HG_Utilities.util.properties:getPropertiesList" VALIDATE-IN="$none" VALIDATE-OUT="$none" INVOKE-ORDER="0">
 
   <!-- nodes -->
 
@@ -66,29 +67,33 @@
 
   <!-- nodes -->
 
-<MAPSET NAME="Setter" OVERWRITE="true" VARIABLES="false" GLOBALVARIABLES="false" FIELD="/key;1;0">
+<MAPSET NAME="Setter" OVERWRITE="true" VARIABLES="false" GLOBALVARIABLES="false" FIELD="/keys;1;1">
   <DATA ENCODING="XMLValues" I18N="true">
 
 <Values version="2.0">
-  <value name="xml">HG_ExceptionAlert.retryCount</value>
+  <array name="xml" type="value" depth="1">
+    <value>HG_ExceptionAlert.retry.count</value>
+    <value>HG_ExceptionAlert.retry.interval</value>
+    <value>HG_ExceptionAlert.jdbc.connection.name</value>
+    <value>HG_ExceptionAlert.cache.manager.name</value>
+    <value>HG_ExceptionAlert.cache.name</value>
+  </array>
   <record name="type" javaclass="com.wm.util.Values">
     <value name="node_type">record</value>
     <value name="node_subtype">unknown</value>
     <value name="node_comment"></value>
     <record name="node_hints" javaclass="com.wm.util.Values">
-      <value name="field_usereditable">true</value>
       <value name="field_largerEditor">false</value>
       <value name="field_password">false</value>
     </record>
     <value name="is_public">false</value>
-    <value name="field_name">key</value>
+    <value name="field_name">keys</value>
     <value name="field_type">string</value>
-    <value name="field_dim">0</value>
-    <array name="field_options" type="value" depth="1">
-    </array>
+    <value name="field_dim">1</value>
     <value name="nillable">true</value>
     <value name="form_qualified">false</value>
     <value name="is_global">false</value>
+    <value name="is_soap_array_encoding_used">false</value>
   </record>
 </Values>
 </DATA>
@@ -99,191 +104,19 @@
 
   <!-- nodes -->
 
-<MAPCOPY FROM="/value;1;0" TO="/LocalVariable;4;0;HG_ExceptionAlert.v1.ui.DeleteAlert.docs:LocalVariable/retryCount;1;0">
+<MAPCOPY FROM="/values[0];1;1" TO="/LocalVariable;4;0;HG_ExceptionAlert.v1.ui.DeleteAlert.docs:LocalVariable/retryCount;1;0">
 </MAPCOPY>
-</MAP>
-</MAPINVOKE>
 
-<MAPINVOKE SERVICE="HG_ConfigPropertyUtil.v1.util.property:getProperty" VALIDATE-IN="$none" VALIDATE-OUT="$none" INVOKE-ORDER="0">
-
-  <!-- nodes -->
-
-<MAP MODE="INVOKEINPUT">
-
-  <!-- nodes -->
-
-<MAPSET NAME="Setter" OVERWRITE="true" VARIABLES="false" GLOBALVARIABLES="false" FIELD="/key;1;0">
-  <DATA ENCODING="XMLValues" I18N="true">
-
-<Values version="2.0">
-  <value name="xml">HG_ExceptionAlert.retryInterval</value>
-  <record name="type" javaclass="com.wm.util.Values">
-    <value name="node_type">record</value>
-    <value name="node_subtype">unknown</value>
-    <value name="node_comment"></value>
-    <record name="node_hints" javaclass="com.wm.util.Values">
-      <value name="field_usereditable">true</value>
-      <value name="field_largerEditor">false</value>
-      <value name="field_password">false</value>
-    </record>
-    <value name="is_public">false</value>
-    <value name="field_name">key</value>
-    <value name="field_type">string</value>
-    <value name="field_dim">0</value>
-    <array name="field_options" type="value" depth="1">
-    </array>
-    <value name="nillable">true</value>
-    <value name="form_qualified">false</value>
-    <value name="is_global">false</value>
-  </record>
-</Values>
-</DATA>
-</MAPSET>
-</MAP>
-
-<MAP MODE="INVOKEOUTPUT">
-
-  <!-- nodes -->
-
-<MAPCOPY FROM="/value;1;0" TO="/LocalVariable;4;0;HG_ExceptionAlert.v1.ui.DeleteAlert.docs:LocalVariable/retryInterval;1;0">
+<MAPCOPY FROM="/values[1];1;1" TO="/LocalVariable;4;0;HG_ExceptionAlert.v1.ui.DeleteAlert.docs:LocalVariable/retryInterval;1;0">
 </MAPCOPY>
-</MAP>
-</MAPINVOKE>
 
-<MAPINVOKE SERVICE="HG_ConfigPropertyUtil.v1.util.property:getProperty" VALIDATE-IN="$none" VALIDATE-OUT="$none" INVOKE-ORDER="0">
-
-  <!-- nodes -->
-
-<MAP MODE="INVOKEINPUT">
-
-  <!-- nodes -->
-
-<MAPSET NAME="Setter" OVERWRITE="true" VARIABLES="false" GLOBALVARIABLES="false" FIELD="/key;1;0">
-  <DATA ENCODING="XMLValues" I18N="true">
-
-<Values version="2.0">
-  <value name="xml">HG_ExceptionAlert.jdbcConnection</value>
-  <record name="type" javaclass="com.wm.util.Values">
-    <value name="node_type">record</value>
-    <value name="node_subtype">unknown</value>
-    <value name="node_comment"></value>
-    <record name="node_hints" javaclass="com.wm.util.Values">
-      <value name="field_usereditable">true</value>
-      <value name="field_largerEditor">false</value>
-      <value name="field_password">false</value>
-    </record>
-    <value name="is_public">false</value>
-    <value name="field_name">key</value>
-    <value name="field_type">string</value>
-    <value name="field_dim">0</value>
-    <array name="field_options" type="value" depth="1">
-    </array>
-    <value name="nillable">true</value>
-    <value name="form_qualified">false</value>
-    <value name="is_global">false</value>
-  </record>
-</Values>
-</DATA>
-</MAPSET>
-</MAP>
-
-<MAP MODE="INVOKEOUTPUT">
-
-  <!-- nodes -->
-
-<MAPCOPY FROM="/value;1;0" TO="/LocalVariable;4;0;HG_ExceptionAlert.v1.ui.DeleteAlert.docs:LocalVariable/jdbcConnection;1;0">
+<MAPCOPY FROM="/values[2];1;1" TO="/LocalVariable;4;0;HG_ExceptionAlert.v1.ui.DeleteAlert.docs:LocalVariable/jdbcConnection;1;0">
 </MAPCOPY>
-</MAP>
-</MAPINVOKE>
 
-<MAPINVOKE SERVICE="HG_ConfigPropertyUtil.v1.util.property:getProperty" VALIDATE-IN="$none" VALIDATE-OUT="$none" INVOKE-ORDER="0">
-
-  <!-- nodes -->
-
-<MAP MODE="INVOKEINPUT">
-
-  <!-- nodes -->
-
-<MAPSET NAME="Setter" OVERWRITE="true" VARIABLES="false" GLOBALVARIABLES="false" FIELD="/key;1;0">
-  <DATA ENCODING="XMLValues" I18N="true">
-
-<Values version="2.0">
-  <value name="xml">HG_ExceptionAlert.cacheManagerName</value>
-  <record name="type" javaclass="com.wm.util.Values">
-    <value name="node_type">record</value>
-    <value name="node_subtype">unknown</value>
-    <value name="node_comment"></value>
-    <record name="node_hints" javaclass="com.wm.util.Values">
-      <value name="field_usereditable">true</value>
-      <value name="field_largerEditor">false</value>
-      <value name="field_password">false</value>
-    </record>
-    <value name="is_public">false</value>
-    <value name="field_name">key</value>
-    <value name="field_type">string</value>
-    <value name="field_dim">0</value>
-    <array name="field_options" type="value" depth="1">
-    </array>
-    <value name="nillable">true</value>
-    <value name="form_qualified">false</value>
-    <value name="is_global">false</value>
-  </record>
-</Values>
-</DATA>
-</MAPSET>
-</MAP>
-
-<MAP MODE="INVOKEOUTPUT">
-
-  <!-- nodes -->
-
-<MAPCOPY FROM="/value;1;0" TO="/LocalVariable;4;0;HG_ExceptionAlert.v1.ui.DeleteAlert.docs:LocalVariable/cacheManagerName;1;0">
+<MAPCOPY FROM="/values[4];1;1" TO="/LocalVariable;4;0;HG_ExceptionAlert.v1.ui.DeleteAlert.docs:LocalVariable/cacheManagerName;1;0">
 </MAPCOPY>
-</MAP>
-</MAPINVOKE>
 
-<MAPINVOKE SERVICE="HG_ConfigPropertyUtil.v1.util.property:getProperty" VALIDATE-IN="$none" VALIDATE-OUT="$none" INVOKE-ORDER="0">
-
-  <!-- nodes -->
-
-<MAP MODE="INVOKEINPUT">
-
-  <!-- nodes -->
-
-<MAPSET NAME="Setter" OVERWRITE="true" VARIABLES="false" GLOBALVARIABLES="false" FIELD="/key;1;0">
-  <DATA ENCODING="XMLValues" I18N="true">
-
-<Values version="2.0">
-  <value name="xml">HG_ExceptionAlert.cacheName</value>
-  <record name="type" javaclass="com.wm.util.Values">
-    <value name="node_type">record</value>
-    <value name="node_subtype">unknown</value>
-    <value name="node_comment"></value>
-    <record name="node_hints" javaclass="com.wm.util.Values">
-      <value name="field_usereditable">true</value>
-      <value name="field_largerEditor">false</value>
-      <value name="field_password">false</value>
-    </record>
-    <value name="is_public">false</value>
-    <value name="field_name">key</value>
-    <value name="field_type">string</value>
-    <value name="field_dim">0</value>
-    <array name="field_options" type="value" depth="1">
-    </array>
-    <value name="nillable">true</value>
-    <value name="form_qualified">false</value>
-    <value name="is_global">false</value>
-  </record>
-</Values>
-</DATA>
-</MAPSET>
-</MAP>
-
-<MAP MODE="INVOKEOUTPUT">
-
-  <!-- nodes -->
-
-<MAPCOPY FROM="/value;1;0" TO="/LocalVariable;4;0;HG_ExceptionAlert.v1.ui.DeleteAlert.docs:LocalVariable/cacheName;1;0">
+<MAPCOPY FROM="/values[5];1;1" TO="/LocalVariable;4;0;HG_ExceptionAlert.v1.ui.DeleteAlert.docs:LocalVariable/cacheName;1;0">
 </MAPCOPY>
 </MAP>
 </MAPINVOKE>
@@ -438,6 +271,9 @@
 
 <MAPCOPY FROM="/exceptionService;1;0" TO="/deleteExceptionRuleInput;2;0/SERVICE_NAME;1;0">
 </MAPCOPY>
+
+<MAPCOPY FROM="/LocalVariable;4;0;HG_ExceptionAlert.v1.ui.DeleteAlert.docs:LocalVariable/jdbcConnection;1;0" TO="/$connectionName;1;0">
+</MAPCOPY>
 </MAP>
 
 <MAP MODE="OUTPUT">
@@ -541,6 +377,17 @@
         <array name="rec_fields" type="record" depth="1">
         </array>
         <value name="modifiable">true</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">unknown</value>
+        <value name="node_subtype">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">$connectionName</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
       </record>
       <record javaclass="com.wm.util.Values">
         <value name="node_type">record</value>
@@ -671,6 +518,17 @@
         <array name="rec_fields" type="record" depth="1">
         </array>
         <value name="modifiable">true</value>
+      </record>
+      <record javaclass="com.wm.util.Values">
+        <value name="node_type">unknown</value>
+        <value name="node_subtype">unknown</value>
+        <value name="is_public">false</value>
+        <value name="field_name">$connectionName</value>
+        <value name="field_type">string</value>
+        <value name="field_dim">0</value>
+        <value name="nillable">true</value>
+        <value name="form_qualified">false</value>
+        <value name="is_global">false</value>
       </record>
       <record javaclass="com.wm.util.Values">
         <value name="node_type">record</value>

@@ -3,13 +3,16 @@
 <Values version="2.0">
   <value name="enabled">yes</value>
   <value name="system_package">no</value>
-  <value name="version">1.0</value>
+  <value name="version">1.1</value>
   <record name="startup_services" javaclass="com.wm.util.Values">
     <null name="HG_ExceptionAlert.v1.ui.solution:createSolution"/>
+    <null name="HG_ExceptionAlert.v1.config:loadConfig"/>
   </record>
   <null name="shutdown_services"/>
   <null name="replication_services"/>
-  <null name="requires"/>
+  <record name="requires" javaclass="com.wm.util.Values">
+    <value name="HG_Utilities">*.*</value>
+  </record>
   <value name="listACL">Default</value>
   <value name="webappLoad">yes</value>
   <value name="reloadWithDependentPackage">yes</value>

@@ -53,7 +53,7 @@
           <value name="is_global">false</value>
           <value name="rec_closed">true</value>
           <value name="modifiable">true</value>
-          <value name="rec_ref">HG_ExceptionAlert.v1.common.docs:NotificationEvent</value>
+          <value name="rec_ref">HG_ExceptionAlert.v1.util.docs:NotificationEvent</value>
         </record>
       </array>
       <value name="modifiable">true</value>
