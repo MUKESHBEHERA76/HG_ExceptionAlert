@@ -2,7 +2,7 @@
 					Table needs to be created(Postgres)
 ====================================================================
 CREATE TABLE "HG_EXCEPTION_ALERT" (
-    "SERVICE_NAME" VARCHAR(255) PRIMARY KEY,
+    "SERVICE_NAME" TEXT PRIMARY KEY,
     "SUBJECT" TEXT,
     "EMAIL_ADDRESS" TEXT,
     "SOURCE" VARCHAR(50),
